@@ -1,0 +1,58 @@
+.control {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 8%;
+  right: 53%;
+  @include laptop {
+    right: 46%;
+  }
+  @include phones {
+    display: none;
+  }
+}
+.control__left,
+.control__right {
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.control__left {
+  transform: translateX(-7px) rotate(135deg);
+}
+.control__right {
+  transform: translateX(7px) rotate(-45deg);
+}
+.control__dots {
+  display: flex;
+}
+.control__dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  &--active {
+    background-color: #fff;
+    border: transparent;
+  }
+  @media (max-width: 770px){
+    margin-right: 9px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

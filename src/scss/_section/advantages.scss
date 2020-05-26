@@ -1,0 +1,45 @@
+.advantages {
+  padding-top: 78px;
+}
+.advantages__title {
+  margin-bottom: 35px;
+  color: $black;
+  text-align: center;
+}
+.advantages__item {
+  padding: 8% 0;
+  text-align: center;
+  &--1 {
+    background: url("../img/adavantages-img.jpg") no-repeat center/cover;
+  }
+  &--2 {
+    background: url("../img/advantages-img2.jpg") no-repeat center/cover;
+  }
+  &--3 {
+    background: url("../img/advantages-img3.jpg") no-repeat center/cover;
+  }
+  &--4 {
+    background: url("../img/advantages-img4.jpg") no-repeat center/cover;
+  }
+  &--5 {
+    background: url("../img/advantages-img5.jpg") no-repeat center/cover;
+  }
+  &--6 {
+    background: url("../img/advantages-img6.jpg") no-repeat center/cover;
+  }
+  @include phones {
+    padding: 12% 0;
+  }
+}
+.advantages__block {
+  padding: 67px 110px;
+  background-color: rgba(#000, 0.44);
+  color: #ffff;
+  height: 100%;
+  @include laptop {
+    padding: 50px 50px;
+  }
+  @include phones {
+    padding: 30px 20px;
+  }
+}

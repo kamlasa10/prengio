@@ -1,0 +1,41 @@
+.promo {
+  position: relative;
+  padding-top: 35px;
+  color: #fff;
+}
+.promo__title {
+  margin-bottom: 15px;
+  font-size: 42px;
+  line-height: 48px;
+  @include phones {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+.promo__desc {
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 30px;
+  span {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  @include phones {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+.promo__link {
+  @include tablets {
+    margin-bottom: 40px;
+  }
+}
+.promo__img {
+  @include laptop {
+    transform: translateY(15px);
+  }
+  @include tablets {
+    transform: translateY(0px);
+  }
+}

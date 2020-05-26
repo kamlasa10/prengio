@@ -1,0 +1,51 @@
+.footer {
+  padding-top: 45px;
+  background-color: #0082a1;
+  padding-bottom: 39px;
+}
+.footer__top {
+  margin-bottom: 38px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  border-bottom: 1px solid rgba(#fff, 0.3);
+}
+.footer__item {
+  @include tablets {
+    text-align: left;
+  }
+  @include phones {
+    text-align: center;
+  }
+}
+.footer__item--center {
+  padding-left: 25px;
+  @include laptop {
+    padding-left: 15px;
+  }
+}
+.footer__title {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__logo {
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+.footer__link {
+  display: block;
+  margin-bottom: 3px;
+  color: #fff;
+  &:hover {
+    color: rgba(#fff, 0.7);
+  }
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 17px;
+}

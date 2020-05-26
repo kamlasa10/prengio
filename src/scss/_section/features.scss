@@ -1,0 +1,81 @@
+.features__top {
+  position: relative;
+  padding-bottom: 120px;
+  margin-bottom: 80px;
+  @include phones {
+    padding-bottom: 30px;
+  }
+}
+.features__arrow {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -35px;
+  left: 50%;
+  @include phones {
+    display: none;
+  }
+}
+.features__arrow-custom {
+  border: solid #ececec;
+  background-color: transparent;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.features__arrow-top {
+  display: inline-block;
+  -webkit-transform: rotate(45deg) translateY(0px) translateX(10px);
+  transform: rotate(45deg) translateY(-44px) translateX(28px);
+}
+.features__arrow-bottom {
+  display: inline-block;
+  -webkit-transform: rotate(45deg) translateY(-66px) translateX(-66px);
+  transform: rotate(45deg) translateY(14px) translateX(-65px);
+}
+.features__item {
+  position: relative;
+  padding: 0 25px;
+  padding-bottom: 35px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ececec;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../spritePng/sprite.png");
+  }
+  &--1 {
+    &::after {
+      background-position: -107px 0px;
+      width: 90px;
+      height: 93px;
+    }
+  }
+  &--2 {
+    &::after {
+      background-position: 0px 0px;
+      width: 102px;
+      height: 93px;
+    }
+    .features__desc {
+      font-weight: 700;
+    }
+  }
+  @include tablets {
+    margin-bottom: 20px;
+  }
+}
+.features__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  @include tablets {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}

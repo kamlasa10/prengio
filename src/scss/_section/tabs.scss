@@ -1,0 +1,93 @@
+.tabs {
+  background: url("../img/tabs-bg.jpg") no-repeat center/cover;
+}
+
+.tabs__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  @include larger-phone {
+    display: block;
+  }
+}
+.tabs__link {
+  position: relative;
+  display: block;
+  text-align: center;
+  vertical-align: top;
+  padding: 9px 25px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  border-right: 1px solid rgba(#fff, 0.5);
+  &:last-child {
+    border-right: none;
+  }
+  &:hover {
+    color: $blue;
+  }
+  &--active {
+    color: $blue;
+  }
+  @media (max-width: 1200px) {
+    padding: 9px 28px;
+  }
+  @include laptop {
+    padding: 9px 15px;
+  }
+  @include tablets {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 9px 10px;
+  }
+  @include larger-phone {
+    border-bottom: 1px solid rgba(#fff, 0.3);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.control__tabs {
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  bottom: -52%;
+  left: 11%;
+  @include tablets {
+    width: 100%;
+    left: 15px;
+  }
+  @include phones {
+    bottom: -70%;
+  }
+  @include small-phones {
+    bottom: -76%;
+  }
+}
+.control__tabs-arrow {
+  position: absolute;
+  border: none;
+  background: url("../img/arrow-tabs-slide.png") no-repeat center;
+  font-size: 0;
+  width: 18px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  &:focus {
+    outline: none;
+  }
+}
+.control__tabs-right {
+  transform: rotate(180deg);
+  right: 15px;
+}
